@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+html{
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #0b0819;
+  background-image: url('./images/background.jpg');
+  background-repeat: repeat;
+  color: #E6E5E1;
+  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body.fontLoaded {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#app {
+  height: 100%;
+  margin: auto;
+  max-width: 840px;
+
+  img {
+    max-width: 100%;
+  }
+  .title {
+    display: block;
+    font-family: magentaregular;
+    font-size: 40px;
+    line-height: 1.15;
+    margin: 0.83em 0;
+    position: relative;
+    &:after {
+      top: 18px;
+      right: -97px;
+      width: 346px;
+      height: 210px;
+      content: "";
+      display: block;
+      position: absolute;
+      background-size: 100%;
+      background-image: url('./images/sticker.png');
+      z-index: -10;
+    }
+  }
+  .subtitle {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: 56px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+}
+#header {
+  margin-bottom: 26px;
+}
+#nav {
+  display: flex;
+  margin-bottom: 104px;
+  a {
+    color: #F2F2F2;
+    width: 254px;
+    border: 1px solid #FFF;
+    height: 44px;
+    padding: 10px;
+    z-index: 1;
+    position: relative;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 1;
+    margin-right: -1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    &.active {
+      border-color: #42C9DD;
+      z-index: 2;
+    }
+  }
+}
+
+p,
+label {
+  line-height: 1.5em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap');
+
+@font-face {
+    font-family: 'magentaregular';
+    src: url('./fonts/magenta-webfont.woff2') format('woff2'),
+         url('./fonts/magenta-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Bebas Neue', Impact, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 38px;
+}
+.main-image {
+  margin-bottom: 46px;
+}
+.content p {
+  line-height: 1.75;
+}
+.content img,
+.content .html {
+  margin-top: 3rem;
+}
+.content .MuiGrid-container {
+  margin-bottom: 3rem;
+}
+.content ul {
+  line-height: 1.75;
+  list-style: none;
+  margin-bottom: 3rem;
+  padding-left: 0;
+}
+
+.content img{
+  max-width: 100%;
+}
+
+.embed {
+  position: relative;
+}
+.embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#others {
+  h2 {
+    position: relative;
+    font-size: 40px;
+    font-family: magentaregular;
+  }
+}
