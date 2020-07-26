@@ -12,7 +12,7 @@ layout: default
   <div id="last-albums">
   {% assign disques = site.disques | where_exp:"disque","disque.url != page.url" %}
   {% for disque in disques limit:3 %}
-    <a href="{{ disque.url }}">
+    <a href="{{ disque.url | relative_url }}">
       <img src="{{ disque.thumbnail }}" />
       <h3>{{ disque.title }}</h3>
       <h4 class="artist">{{ disque.artist }}</h4>

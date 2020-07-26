@@ -9,7 +9,7 @@ layout: home
   <h2 class="title">Dernières actualités</h2>
   {% for article in site.articles %}
   <article class="article">
-    <a href="{{ article.url }}">
+    <a href="{{ article.url | relative_url }}">
       <img class="main-image" src="{{ article.thumbnail }}" />
       <span class="subtitle">Nouveautés</span>
       <h3>{{ article.title }}</h3>
@@ -23,7 +23,7 @@ layout: home
   <h2 class="title">Dernières sorties</h2>
   <div id="last-albums">
   {% for disque in site.disques limit:3 %}
-    <a href="{{ disque.url }}">
+    <a href="{{ disque.url | relative_url }}">
       <img src="{{ disque.thumbnail }}" />
       <h3>{{ disque.title }}</h3>
       <h4 class="artist">{{ disque.artist }}</h4>
