@@ -2,8 +2,8 @@
 layout: disque
 title: Eponyme
 artist: Selenian
-thumbnail: "../assets/images/disques/selenian_eponyme/thumbnail.jpg"
-image: "../assets/images/disques/selenian_eponyme/0004499405_10.jpg"
+thumbnail: "./assets/images/disques/selenian_eponyme/thumbnail.jpg"
+image: "./assets/images/disques/selenian_eponyme/0004499405_10.jpg"
 slug: eponyme
 ---
 During the fall of 2014, the band releases its first 4 tracks EP.<br>

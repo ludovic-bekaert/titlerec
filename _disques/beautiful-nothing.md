@@ -2,8 +2,8 @@
 layout: disque
 title: Beautiful Nothing
 artist: Ralph Of London & Cayman Kings' split
-thumbnail: "../assets/images/disques/rol_cayman_split/thumbnail.jpg"
-image: "../assets/images/disques/rol_cayman_split/SPLIT ROL CAYMAN KINGS recto.jpg"
+thumbnail: "./assets/images/disques/rol_cayman_split/thumbnail.jpg"
+image: "./assets/images/disques/rol_cayman_split/SPLIT ROL CAYMAN KINGS recto.jpg"
 slug: beautiful-nothing
 price: 12
 ---
