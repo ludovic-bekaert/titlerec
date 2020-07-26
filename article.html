@@ -8,7 +8,7 @@ layout: default
 <h2 class="title">Dernières actualités</h2>
 {% for article in site.articles %}
   <article class="article">
-    <a href="{{ article.url }}">
+    <a href="{{ article.url | relative_url }}">
       <img class="main-image" src="{{ article.thumbnail }}" />
       <span class="subtitle">Nouveautés</span>
       <h3>{{ article.title }}</h3>
