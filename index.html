@@ -17,7 +17,7 @@ layout: home
     </a>
   </article>
   {% endfor %}
-  <a class="see-more" href="./article">Anciennes publications</a>
+  <a class="see-more" href="{{ '/article' | relative_url }}">Anciennes publications</a>
 </section>
 <section>
   <h2 class="title">Dernières sorties</h2>
@@ -30,5 +30,5 @@ layout: home
     </a>
   {% endfor %}
   </div>
-  <a class="see-more" href="./disque">Voir tous les disques</a>
+  <a class="see-more" href="{{ '/disque' | relative_url }}">Voir tous les disques</a>
 </section>

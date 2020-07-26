@@ -19,5 +19,5 @@ layout: default
     </a>
   {% endfor %}
   </div>
-  <a class="see-more" href="{{site.url}}/disque">Voir tous les disques</a>
+  <a class="see-more" href="{{ '/disque' | relative_url }}">Voir tous les disques</a>
 </section>
