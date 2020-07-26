@@ -1,0 +1,32 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: home
+---
+
+<section>
+
+  <h2 class="title">Dernières actualités</h2>
+  {% for article in site.articles %}
+  <a href="{{ article.url }}">
+    <img class="main-image" src="{{ article.thumbnail }}" />
+    <span>Nouveautés</span>
+    <h1>{{ article.title }}</h1>
+  </a>
+  {% endfor %}
+  <a class="see-more" href="./article">Anciennes publications</a>
+</section>
+<section>
+  <h2 class="title">Dernières sorties</h2>
+  <div id="last-albums">
+  {% for disque in site.disques limit:3 %}
+    <a href="{{ disque.url }}">
+      <img src="{{ disque.thumbnail }}" />
+      <h3>{{ disque.title }}</h3>
+      <h4 class="artist">{{ disque.artist }}</h4>
+    </a>
+  {% endfor %}
+  </div>
+  <a class="see-more" href="./disque">Voir tous les disques</a>
+</section>

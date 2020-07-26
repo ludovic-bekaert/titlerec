@@ -1,8 +1,10 @@
 ---
 layout: disque
-title: "Hopeless melody"
+title: Hopeless melody
 artist: Ralph of London
-thumbnail: "../assets/images/disques/rol_coming_up_roses/0016262124_10.jpg"
+thumbnail: "../assets/images/disques/rol_coming_up_roses/thumbnail.jpg"
+image: "../assets/images/disques/rol_coming_up_roses/0016262124_10.jpg"
+slug: hopeless-melody
 ---
 
 Written and recorded by Ralph of London in Longformacus, Scotland. <br>

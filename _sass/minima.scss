@@ -11,6 +11,28 @@ html{
   overflow-x: hidden;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+.container {
+  width: calc(100% + 24px);
+  margin-left: -12px;
+  margin-right: -12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+[class^=col-] {
+  flex-grow: 0;
+  padding: 0 12px;
+}
+.col-5 {
+  max-width: 41.666667%;
+  flex-basis: 41.666667%;
+}
+.col-6 {
+  max-width: 50%;
+  flex-basis: 50%;
+}
 body {
   background-color: #0b0819;
   background-image: url('./images/background.jpg');
@@ -48,6 +70,7 @@ body.fontLoaded {
       position: absolute;
       background-size: 100%;
       background-image: url('./images/sticker.png');
+      background-repeat: no-repeat;
       z-index: -10;
     }
   }
@@ -70,7 +93,7 @@ body.fontLoaded {
 #nav {
   display: flex;
   margin-bottom: 104px;
-  a {
+  a:not(.facebook) {
     color: #F2F2F2;
     width: 254px;
     border: 1px solid #FFF;
@@ -89,6 +112,64 @@ body.fontLoaded {
       border-color: #42C9DD;
       z-index: 2;
     }
+  }
+}
+#contact {
+  border: 1px solid #FFF;
+  & > div {
+    padding: 32px;
+    &:first-child{
+      border-bottom: 1px solid #FFF;
+    }
+  }
+  h3 {
+    font-size: 32px;
+    margin-top: 0;
+    font-family: magentaregular;
+  }
+  .newsletter {
+    margin: 0 -33px -33px;
+    #mc_embed_signup #mc-embedded-subscribe {
+      background-color: #3881F3;
+    }
+  }
+}
+#footer {
+  color: #141024;
+  position: relative;
+  font-size: 14px;
+  margin-top: 160px;
+  min-height: 290px;
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-image: url('./images/footer.png');
+  background-repeat: repeat-y;
+  &:before {
+
+    top: -100px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    content: "";
+    position: absolute;
+    background-image: url('./images/footer-top.png');
+  }
+  h1 {
+    font-family: magentaregular;
+    font-size: 32px;
+    line-height: 1em;
+    margin-top: 0;
+    text-align: center;
+    text-transform: initial;
+  }
+  h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .facebook {
+    position: absolute;
+    top: 0;
   }
 }
 
@@ -159,5 +240,125 @@ h2 {
     position: relative;
     font-size: 40px;
     font-family: magentaregular;
+  }
+}
+
+.subtitle {
+  display: inline-block;
+  font-style: 18px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.see-more {
+  border: 1px solid #42C9DD;
+  color: #42C9DD;
+  display: block;
+  font-family: magentaregular;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  width: 50%;
+  margin-left: auto;
+  &:hover {
+    background: #42C9DD;
+    color: #0b0819;
+  }
+}
+.article {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  h3 {
+    font-family: 'Bebas Neue', Impact, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    margin-top: 0.67em;
+    margin-bottom: 24px;
+  }
+}
+.album {
+  margin-bottom: 72px;
+  h2 {
+    margin-bottom: 24px;
+    margin-top: 0.67em;;
+  }
+  img {
+    margin-bottom: 46px;
+    width: 100%;
+  }
+  .see-more {
+    width: 33.3333%;
+  }
+}
+#last-albums {
+  width: calc(100% + 24px);
+  margin: -12px;
+  display: flex;
+  flex-wrap: wrap;
+  a {
+
+    flex-grow: 0;
+    max-width: 33.333333%;
+    flex-basis: 33.333333%;
+    color: inherit;
+    display: block;
+    margin-bottom: 72px;
+    padding: 12px;
+    text-decoration: none;
+  }
+  img {
+    margin-bottom: 26px;
+    width: 100%;
+  }
+  .artist {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-family: 'Bebas Neue', Impact, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    margin-bottom: 16px;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+}
+
+#mc_embed_signup {
+  clear: left;
+  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+
+  .form {
+    display: flex;
+
+    .mc-field-group {
+      flex-grow: 1;
+      padding-bottom: 0;
+
+      input {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 0;
+        padding-left: 20px;
+        font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 14px;
+      }
+    }
+  }
+
+  #mc-embedded-subscribe {
+    background: #42c9dd;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    padding: 0 20px;
+    line-height: 57px;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
   }
 }

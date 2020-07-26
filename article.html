@@ -1,0 +1,19 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+collection: articles
+layout: default
+---
+<section>
+<h2 class="title">Dernières actualités</h2>
+{% for article in site.articles %}
+  <article class="article">
+    <a href="{{ article.url }}">
+      <img class="main-image" src="{{ article.thumbnail }}" />
+      <span class="subtitle">Nouveautés</span>
+      <h3>{{ article.title }}</h3>
+      <p>{{ article.excerpt }}</p>
+    </a>
+  </article>
+{% endfor %}
+</section>

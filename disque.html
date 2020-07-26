@@ -1,0 +1,12 @@
+---
+collection: disques
+layout: default
+---
+{% for disque in site.disques %}
+  <article class="album">
+    <img src="{{ disque.image }}" />
+    <span class="subtitle">{{ disque.artist }}</span>
+    <h2>{{ disque.title }}</h2>
+    <a class="see-more" href="{{ disque.url }}">Voir le disque</a>
+  </article>
+{% endfor %}
