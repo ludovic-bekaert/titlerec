@@ -6,7 +6,8 @@ layout: default
 ---
 <section>
 <h2 class="title">Dernières actualités</h2>
-{% for article in site.articles %}
+{% assign ordered_articles = site.articles | sort: 'date' | reverse %}
+{% for article in ordered_articles %}
   <article class="article">
     <a href="{{ article.url | relative_url }}">
       <img class="main-image" src="{{ article.thumbnail | relative_url }}" />

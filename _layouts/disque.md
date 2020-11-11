@@ -3,7 +3,7 @@ layout: default
 ---
 <article>
 <span class="title">Disque</span>
-<img class="main-image" src="{{ page.image }}" />
+<img class="main-image" src="{{ page.image | relative_url }}" />
 <span class="subtitle">{{ page.artist }}</span>
 <h1>{{ page.title }}</h1>
 <div class="content">{{ content }}</div>
@@ -13,7 +13,7 @@ layout: default
   {% assign disques = site.disques | where_exp:"disque","disque.url != page.url" %}
   {% for disque in disques limit:3 %}
     <a href="{{ disque.url | relative_url }}">
-      <img src="{{ disque.thumbnail }}" />
+      <img src="{{ disque.thumbnail | relative_url }}" />
       <h3>{{ disque.title }}</h3>
       <h4 class="artist">{{ disque.artist }}</h4>
     </a>
