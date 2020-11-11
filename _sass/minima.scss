@@ -277,6 +277,11 @@ h2 {
     margin-top: 0.67em;
     margin-bottom: 24px;
   }
+  section & img {
+    width: 100%;
+    max-height: 440px;
+    object-fit: cover;
+  }
 }
 .album {
   margin-bottom: 72px;

@@ -9,7 +9,7 @@ layout: default
 {% for article in site.articles %}
   <article class="article">
     <a href="{{ article.url | relative_url }}">
-      <img class="main-image" src="{{ article.thumbnail }}" />
+      <img class="main-image" src="{{ article.thumbnail | relative_url }}" />
       <span class="subtitle">Nouveautés</span>
       <h3>{{ article.title }}</h3>
       <p>{{ article.excerpt }}</p>

@@ -4,7 +4,7 @@ layout: default
 ---
 {% for disque in site.disques %}
   <article class="album">
-    <img src="{{ disque.image }}" />
+    <img src="{{ disque.image | relative_url }}" />
     <span class="subtitle">{{ disque.artist }}</span>
     <h2>{{ disque.title }}</h2>
     <a class="see-more" href="{{ disque.url | relative_url }}">Voir le disque</a>
